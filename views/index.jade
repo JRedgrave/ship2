@@ -1,0 +1,19 @@
+extend layout
+block content
+  p
+    | This site is for anyone unsure if a particular online retailer
+    | ships to a specific overseas country.
+  p
+    | I wish to ship to #{foo}
+    - var foo = ['Australia']
+    select
+          option #{foo}
+block sidebar
+  .widget
+    h1 Widget
+    - var foo = "bar"
+    p.
+      #{foo}
+    p
+      | content
+      | more.
